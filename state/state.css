@@ -1,0 +1,126 @@
+body {
+    color: #fff;
+    display: relative;
+}
+
+#root {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 207px);
+    left: calc(50% - 165px);
+    width: 330px;
+    height: 414px;
+}
+
+.clock-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    border: 2px solid #933;
+    border-radius: 10px;
+    padding: 10px;
+}
+.clock {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid #933;
+}
+
+.h {
+    position: absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+    border-radius: 50%;
+    border: 1px solid #999;
+}
+
+.h-0 {
+    transform: rotate(-90deg) translate(120px) rotate(90deg);
+}
+
+.h-1 {
+    transform: rotate(-60deg) translate(120px) rotate(60deg);
+}
+
+.h-2 {
+    transform: rotate(-30deg) translate(120px) rotate(30deg);
+}
+
+.h-3 {
+    transform: translate(120px);
+}
+
+.h-4 {
+    transform: rotate(30deg) translate(120px) rotate(-30deg);
+}
+
+.h-5 {
+    transform: rotate(60deg) translate(120px) rotate(-60deg);
+}
+
+.h-6 {
+    transform: rotate(90deg) translate(120px) rotate(-90deg);
+}
+
+.h-7 {
+    transform: rotate(120deg) translate(120px) rotate(-120deg);
+}
+
+.h-8 {
+    transform: rotate(150deg) translate(120px) rotate(-150deg);
+}
+
+.h-9 {
+    transform: rotate(180deg) translate(120px) rotate(-180deg);
+}
+
+.h-10 {
+    transform: rotate(210deg) translate(120px) rotate(-210deg);
+}
+
+.h-11 {
+    transform: rotate(240deg) translate(120px) rotate(-240deg);
+}
+
+.clockwise {
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 100px);
+    -webkit-clip-path: polygon(50% 5%, 65% 45%, 60% 50%, 40% 50%, 35% 45%);
+    clip-path: polygon(50% 5%, 65% 45%, 60% 50%, 40% 50%, 35% 45%);
+}
+
+.hour {
+    background: #922;
+}
+
+.minutes {
+    background: #b62;
+}
+
+.seconds {
+    background: #ca2;
+}
+
+.clock-text {
+    background: #333;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #933;
+}
